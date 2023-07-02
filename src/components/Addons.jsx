@@ -14,32 +14,25 @@ function Addons() {
       <div>
         <Sidebar />
       </div>
-      <div className='lg:ml-36 lg:mt-12 mt-[-450px] p-4'>
+      <div className='lg:ml-36 lg:mt-12 mt-[-450px] p-4 lg:grow'>
         <p className='lg:text-4xl font-bold text-3xl '>Pick add-ons</p>
         <p className='mt-3 font-mono text-slate-500'>Add-ons help enhance your gaming experience.</p>
         <div className='pt-8'>
           {addons.map((addon) => (
-            <div key={addon.id} className='flex w-[600px] border-2 border-gray-300 checked:border-blue-800 p-6 rounded-xl mt-5'>
-              <div className=' font-bold w-full text-slate-900'>
-                <div className=''>
-                  <label className='flex'>
-                    <div className='mt-4 peer:'> 
-                      <input type="checkbox" className={`ml-4 w-5 h-5 appearance-none border-2 border-black checked:bg-red-600`} />
-                    </div>
-                    <div className='pl-7'>
-                      <span className=''>
-                        {addon.name}
-                      </span>
-                      <p className='text-slate-500 font-mono font-normal'>
-                        {addon.description}
-                      </p>
-                    </div>
-                  </label>
-                </div>
-              </div>
-              <div className='float-right'>
-                {addon.price}
-              </div>
+            <div className=''>
+
+<ul class="flex w-full">
+    <li>
+        <input type="checkbox" id="react-option" value="" class="hidden peer" required="" />
+        <label for="react-option" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
+            <div class="block w-[32vw]">
+                <div class="w-full text-lg font-semibold">{addon.name}</div>
+                <div class="w-full text-sm">{addon.description}</div>
+            </div>
+        </label>
+    </li>
+</ul>
+
             </div>
           ))}
         </div>
