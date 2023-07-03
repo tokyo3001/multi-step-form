@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Info from "./components/Info";
 import Plans from "./components/Plans";
 import Addons from "./components/Addons";
+import Summary from "./components/Summary";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
               <Route exact path="/" Component={Info} />
               <Route exact path="/plans" Component={Plans} />
               <Route exact path="/addons" Component={Addons} />
+              <Route exact path="/summary" Component={Summary} />
             </Routes>
           </Router>
         </div>

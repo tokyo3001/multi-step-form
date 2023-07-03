@@ -45,9 +45,7 @@ function Info() {
 
   useEffect(() => {
     localStorage.setItem('email', JSON.stringify(email));
-  }, [email]);
-
-  
+  }, [email]);  
 
   return (
     <div className='lg:flex'>
