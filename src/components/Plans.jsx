@@ -9,9 +9,9 @@ import Addons from './Addons';
 function Plans() {
 
   const [plans, setPlans] = useState([
-    { id: '1', name: 'Arcade', price: '$9/mo', image: <GamesIcon className='bg-orange-300 text-white rounded-full p-2' sx={{ fontSize: 50}}/>, prices: '$90/yr' },
-    { id: '2', name: 'Advanced', price: '$12/mo', image: <VideogameAssetIcon className='bg-rose-400 text-white rounded-full p-2' sx={{ fontSize: 50}}/>, prices: '$120/yr' },
-    { id: '3', name: 'Pro', price: '$15/mo', image: <SportsEsportsIcon className='bg-blue-800 text-white rounded-full p-2' sx={{ fontSize: 50}}/>, prices: '$150/yr' }
+    { id: '1', name: 'Arcade', price: '$9/mo', image: <GamesIcon className='bg-orange-300 text-white rounded-full p-2' value='arcade' sx={{ fontSize: 50}}/>, prices: '$90/yr' },
+    { id: '2', name: 'Advanced', price: '$12/mo', image: <VideogameAssetIcon className='bg-rose-400 text-white rounded-full p-2' value='adv' sx={{ fontSize: 50}}/>, prices: '$120/yr' },
+    { id: '3', name: 'Pro', price: '$15/mo', image: <SportsEsportsIcon className='bg-blue-800 text-white rounded-full p-2' sx={{ fontSize: 50}} value='pro'/>, prices: '$150/yr' }
   ]);
   const [selectedId, setSelectedId] = useState('1');
 
