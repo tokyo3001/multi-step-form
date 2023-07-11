@@ -9,6 +9,7 @@ function App() {
     <div className="flex justify-center">
       <div className="lg:shadow-lg shadow-slate-500 w-80 mt-5 lg:p-16 lg:grow rounded-md lg:ml-64 lg:mr-64 lg:mt-28 bg-zinc-100">
         <div className="flex">
+          
           <Router>
             <Routes>
               <Route exact path="/" Component={Info} />
@@ -17,6 +18,7 @@ function App() {
               <Route exact path="/summary" Component={Summary} />
             </Routes>
           </Router>
+         
         </div>
       </div>
     </div>
